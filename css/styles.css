@@ -1,0 +1,73 @@
+/* основной цвет текста   #757575 */
+/* вторичний цвет текста  #212121 */
+/* основной цвет заливки  #E5E5E5 */
+/* вторичний цвет заливки #F5F4FA */
+/* белий (different) #FFFFFF */
+/* акцент #2196F3 */
+/* фон подписи изображения rgba(47, 48, 58, 0.8) */
+/* фон футера #2F303A */
+/* вторичний цвет текста футера rgba(255, 255, 255, 0.6) */
+/* пподпись страницы rgba(255, 255, 255, 0.4) */
+:root {
+  --logo-web-color: #2196f3;
+  --logo-studio-color: #000000;
+  --logo-footer-color: #ffffff;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --different-text-color: #ffffff;
+  --primary-bg-color: #e5e5e5;
+  --different-bg-color: #f5f4fa;
+  --image-bg-color: rgba(47, 48, 58, 0.8);
+  --nav-bg-color: #ffffff;
+  --footer-bg-color: #2f303a;
+}
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+header {
+  background-color: var(--nav-bg-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.title {
+  color: var(--title-text-color);
+}
+/* шапка сайта */
+.logo {
+  color: var(--logo-web-color);
+}
+.logo-studio {
+  color: var(--logo-studio-color);
+}
+.logo-footer {
+  color: var(--logo-footer-color);
+}
+
+.saite-nav .link {
+  color: var(--title-text-color);
+}
+
+.saite-nav .link.current {
+  color: var(--accent-color);
+}
+.saite-nav .link:hover,
+.saite-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.contact {
+  color: var(--primary-text-color);
+}
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+/* hero  */
+.hero-title {
+  color: var(--different-text-color);
+}
