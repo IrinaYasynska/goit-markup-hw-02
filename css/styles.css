@@ -7,10 +7,11 @@
 /* фон подписи изображения rgba(47, 48, 58, 0.8) */
 /* фон футера #2F303A */
 /* вторичний цвет текста футера rgba(255, 255, 255, 0.6) */
-/* пподпись страницы rgba(255, 255, 255, 0.4) */
+/* подпись страницы rgba(255, 255, 255, 0.4) */
 :root {
   --logo-web-color: #2196f3;
   --logo-studio-color: #000000;
+  --nav-bg-color: #ffffff;
   --logo-footer-color: #ffffff;
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -19,27 +20,50 @@
   --primary-bg-color: #e5e5e5;
   --different-bg-color: #f5f4fa;
   --image-bg-color: rgba(47, 48, 58, 0.8);
-  --nav-bg-color: #ffffff;
   --footer-bg-color: #2f303a;
 }
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 header {
   background-color: var(--nav-bg-color);
+  padding-top: 24px;
 }
 
 .list {
   list-style: none;
 }
-
 .title {
   color: var(--title-text-color);
 }
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.task .title,
+.trend .caption,
+.footer h2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
 /* шапка сайта */
 .logo {
   color: var(--logo-web-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19px;
+  text-decoration: none;
 }
 .logo-studio {
   color: var(--logo-studio-color);
@@ -50,6 +74,11 @@ header {
 
 .saite-nav .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .saite-nav .link.current {
@@ -62,6 +91,12 @@ header {
 
 .contact {
   color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .contact:hover,
 .contact:focus {
@@ -70,4 +105,82 @@ header {
 /* hero  */
 .hero-title {
   color: var(--different-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button-hero {
+  color: var(--different-text-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+/* задачи */
+.task-icon {
+  background-color: var(--different-bg-color);
+}
+/*  чем занимаемся */
+
+.trend .caption {
+  color: var(--different-text-color);
+  background-color: var(--image-bg-color);
+  text-align: center;
+}
+
+/* Команда */
+.team {
+  background-color: var(--different-bg-color);
+}
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team p {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.expert {
+  background-color: var(--nav-bg-color);
+}
+.icon:hover,
+.icon:focus {
+  color: var(--accent-color);
+}
+
+/* Клиенты */
+.partners .icon:hover,
+.partners .icon:focus {
+  background-color: var(--accent-color);
+}
+/* Футер */
+.footer {
+  color: var(--different-text-color);
+  background-color: var(--footer-bg-color);
+}
+.footer .contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+.button-footer {
+  color: var(--different-text-color);
+  background-color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* 2020 | Developed by GoIT Students */
+.developed {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
 }
