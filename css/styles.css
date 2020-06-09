@@ -21,6 +21,7 @@
   --different-bg-color: #f5f4fa;
   --image-bg-color: rgba(47, 48, 58, 0.8);
   --footer-bg-color: #2f303a;
+  --accent-bg-color: #2196f3;
 }
 body {
   background-color: var(--primary-bg-color);
@@ -28,7 +29,7 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03rem;
 }
 header {
   background-color: var(--nav-bg-color);
@@ -47,14 +48,14 @@ header {
   line-height: 1.17;
   text-align: center;
 }
-.task .title,
-.trend .caption,
-.footer h2 {
+
+.text-style {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+.accent
 
 /* шапка сайта */
 .logo {
@@ -62,7 +63,6 @@ header {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19px;
   text-decoration: none;
 }
 .logo-studio {
@@ -77,15 +77,15 @@ header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02rem;
   text-decoration: none;
 }
 
-.saite-nav .link.current {
+.link.current {
   color: var(--accent-color);
 }
-.saite-nav .link:hover,
-.saite-nav .link:focus {
+.link:hover,
+.link:focus {
   color: var(--accent-color);
 }
 
@@ -95,13 +95,9 @@ header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
   text-decoration: none;
 }
-.contact:hover,
-.contact:focus {
-  color: var(--accent-color);
-}
+
 /* hero  */
 .hero-title {
   color: var(--different-text-color);
@@ -109,16 +105,16 @@ header {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06rem;
   text-transform: uppercase;
 }
 .button-hero {
   color: var(--different-text-color);
-  background-color: var(--accent-color);
+  background-color: var(--accent-bg-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06rem;
   text-decoration: none;
 }
 
@@ -128,7 +124,7 @@ header {
 }
 /*  чем занимаемся */
 
-.trend .caption {
+.trend .text-style {
   color: var(--different-text-color);
   background-color: var(--image-bg-color);
   text-align: center;
@@ -146,22 +142,18 @@ header {
 }
 .team p {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
 }
 
 .expert {
   background-color: var(--nav-bg-color);
 }
-.icon:hover,
-.icon:focus {
-  color: var(--accent-color);
-}
 
 /* Клиенты */
-.partners .icon:hover,
-.partners .icon:focus {
-  background-color: var(--accent-color);
+.icon:hover,
+.icon:focus {
+  background-color: #2196f3;
 }
 /* Футер */
 .footer {
@@ -176,7 +168,7 @@ header {
 }
 .button-footer {
   color: var(--different-text-color);
-  background-color: var(--accent-color);
+  background-color: var(--accent-bg-color);
   text-decoration: none;
 }
 
@@ -196,12 +188,11 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  letter-spacing: 0.03em;
 }
 .button:hover,
 .button:focus {
   color: var(--different-text-color);
-  background-color: var(--accent-color);
+  background-color: var(--accent-bg-color);
 }
 .portfolio a {
   text-decoration: none;
@@ -211,14 +202,13 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06rem;
 }
 
 .description {
   color: var(--different-text-color);
   background-color: rgba(33, 150, 243, 0.9);
   font-size: 18px;
-  line-height: 1.56px;
 }
 .portfolio .category {
   color: var(--primary-text-color);
