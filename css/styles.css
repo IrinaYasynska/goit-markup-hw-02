@@ -31,7 +31,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-header {
+.header {
   background-color: var(--nav-bg-color);
   padding-top: 24px;
 }
@@ -71,7 +71,7 @@ header {
   color: var(--logo-footer-color);
 }
 
-.saite-nav .link {
+.link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -79,8 +79,7 @@ header {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
-.link.current {
+.current {
   color: var(--accent-color);
 }
 .link:hover,
@@ -133,13 +132,13 @@ header {
 .team {
   background-color: var(--different-bg-color);
 }
-.team h3 {
+.name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
-.team p {
+.position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
