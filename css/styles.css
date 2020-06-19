@@ -24,7 +24,6 @@
   --accent-bg-color: #2196f3;
 }
 body {
-  background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -97,6 +96,9 @@ body {
 }
 
 /* hero  */
+.hero {
+  background-color: var(--primary-bg-color);
+}
 .hero-title {
   color: var(--different-text-color);
   font-weight: 900;
@@ -117,6 +119,9 @@ body {
 }
 
 /* задачи */
+.task {
+  background-color: var(--primary-bg-color);
+}
 .task-icon {
   background-color: var(--different-bg-color);
 }
